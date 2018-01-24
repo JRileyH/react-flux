@@ -8,7 +8,7 @@ var Header = React.createClass({
     render: function(){
         return (
             <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                 <Link className="navbar-brand" to="app">
                     <img width="100" src="./images/logo.png"/>
                 </Link>

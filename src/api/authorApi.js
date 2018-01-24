@@ -2,9 +2,10 @@
 
 var authors = require('./authorData').authors;
 var _ = require('lodash');
+var authorCount = 103;
 
 var _generateId = function(author) {
-	return author.firstName.toLowerCase() + '-' + author.lastName.toLowerCase();
+	return authorCount++;
 };
 
 var _clone = function(item) {
