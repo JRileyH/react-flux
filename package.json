@@ -1,0 +1,29 @@
+{
+  "name": "react-flux",
+  "version": "1.0.0",
+  "description": "react with flux demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "browserify": "^15.2.0",
+    "eslint-plugin-react": "^7.5.1",
+    "flux": "^2.0.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-eslint": "^4.0.1",
+    "gulp-open": "^2.1.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.4",
+    "popper.js": "^1.12.9",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
