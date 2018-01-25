@@ -12,17 +12,17 @@ var Input = React.createClass({
         error: React.PropTypes.string,
     },
     render: function(){
-        var wrapperClass = 'form-group';
+        var inputClass = 'form-control'
         if (this.props.error && this.props.error.length > 0){
-            wrapperClass += " " + 'has-error';
+            inputClass += " " + 'has-danger';
         }
         return (
-            <div className={wrapperClass}>
+            <div className="form-group">
                 <label htmlFor={this.props.name}>{this.props.label}</label>
                 <div className="field">
                     <input type="text"
                         name={this.props.name}
-                        className="form-control"
+                        className={inputClass}
                         placeholder={this.props.placeholder}
                         ref={this.props.name}
                         onChange={this.props.onChange}
