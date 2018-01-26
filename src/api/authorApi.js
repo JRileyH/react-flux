@@ -4,7 +4,7 @@ var authors = require('./authorData').authors;
 var _ = require('lodash');
 var authorCount = 103;
 
-var _generateId = function(author) {
+var _generateId = function() {
 	return authorCount++;
 };
 
@@ -27,7 +27,7 @@ var AuthorApi = {
 			var existingAuthorIndex = _.indexOf(authors, _.find(authors, {id: author.id})); 
 			authors.splice(existingAuthorIndex, 1, author);
 		} else {
-			author.id = _generateId(author);
+			author.id = _generateId();
 			authors.push(author);
 		}
 

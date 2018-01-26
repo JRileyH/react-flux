@@ -14,11 +14,11 @@ var AuthorActions = {
         })
     },
     editAuthor: function(author){
-        var author = AuthorApi.saveAuthor(author);
+        var editedAuthor = AuthorApi.saveAuthor(author);
 
         Dispatcher.dispatch({
             actionType: ActionTypes.EDIT_AUTHOR,
-            author: author
+            author: editedAuthor
         })
     },
     deleteAuthor: function(id){
