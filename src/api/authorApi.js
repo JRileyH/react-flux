@@ -18,7 +18,7 @@ var AuthorApi = {
 	},
 
 	getAuthorById: function(id) {
-		var author = _.find(authors, {id: id});
+		var author = _.find(authors, {id: Number(id)});
 		return _clone(author);
 	},
 	
