@@ -38,6 +38,12 @@ Dispatcher.register(function(action){
             _authors.push(action.author);
             AuthorStore.emitChange();
             break;
+        case ActionTypes.EDIT_AUTHOR:
+            var existingAuthor = _.find(_authors, {id: action.author.id});
+            var index = _.indexOf(_authors, existingAuthor);
+            _authors.splice(index, 1, action.author);
+            AuthorStore.emitChange();
+            break;
         default:
     }
 });

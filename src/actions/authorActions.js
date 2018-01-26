@@ -12,6 +12,14 @@ var AuthorActions = {
             actionType: ActionTypes.CREATE_AUTHOR,
             author: newAuthor
         })
+    },
+    editAuthor: function(author){
+        var author = AuthorApi.saveAuthor(author);
+
+        Dispatcher.dispatch({
+            actionType: ActionTypes.EDIT_AUTHOR,
+            author: author
+        })
     }
 };
 
